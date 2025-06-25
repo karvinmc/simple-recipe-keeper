@@ -32,7 +32,7 @@ Aplikasi Flutter untuk menyimpan dan mengatur resep masakan pribadi dengan auten
 Buat akun Supabase dan database baru.
 Di SQL Editor, jalankan query berikut:
 
-```
+```sql
 -- Tabel untuk resep
 CREATE TABLE recipes (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
@@ -55,18 +55,18 @@ CREATE POLICY "Users can only access their own recipes" ON recipes
 
 Clone repository ini:
 
-```
+```bash
 git clone https://github.com/karvinmc/simple-recipe-keeper.git
 cd simple-recipe-keeper
 ```
 
 Instal dependencies:
-```
+```bash
 flutter pub get
 ```
 
 Update file `lib/utils/constants.dart` dengan kredensial Supabase anda:
-```
+```dart
 class Constants {
   static const String supabaseUrl = 'YOUR_SUPABASE_URL';
   static const String supabaseAnonKey = 'YOUR_SUPABASE_ANON_KEY';
