@@ -1,0 +1,35 @@
+name: simple_recipe_keeper
+description: A simple recipe keeper app
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI
+  cupertino_icons: ^1.0.6
+
+  # State Management
+  provider: ^6.1.1
+
+  # Database & Auth
+  supabase_flutter: ^2.3.4
+
+  # Local Storage
+  shared_preferences: ^2.2.2
+
+  # Navigation
+  go_router: ^15.2.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
